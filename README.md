@@ -35,11 +35,15 @@ cd backend-solsphere
 ```bash
 npm install
 ```
-4.***Start server***
+4.***Add env***
+```bash
+echo 'API_KEY=your-api-key' > .env
+```
+5.***Start server***
 ```bash
 node server.js
 ```
-4.1.***Start server with nodemon***
+5.1.***Start server with nodemon***
 ```bash
 npm i -g nodemon  #if not installed globally
 npx nodemon server

@@ -94,7 +94,8 @@ router.get("/reports/:machineId/history",authMiddleware, (req, res) => {
     FROM system_reports
     WHERE machine_id = ? 
     AND checks IS NOT NULL
-    ORDER BY timestamp ASC
+    ORDER BY timestamp DESC
+    LIMIT 10
   `;
 
   db.all(query, [machineId], (err, rows) => {

@@ -39,7 +39,7 @@ npm install
 ```bash
 node server.js
 ```
-5.***with nodemon***
+4.1.***Start server with nodemon***
 ```bash
 npm i -g nodemon  #if not installed globally
 npx nodemon server
